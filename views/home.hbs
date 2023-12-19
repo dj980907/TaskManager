@@ -1,0 +1,45 @@
+<h1>Filter Tasks:</h1>
+<form method="GET" action="/" >
+    <input type="text" name="tag" placeholder="Search by Tag">
+    <input type="text" name="title" placeholder="Search by Title">  
+    <input type="submit" value="Search">
+    <input type="submit" value="Clear All"> 
+</form>
+
+
+
+<h1>My Tasks:</h1>
+
+<table style="width:100%">
+  <tr>
+    <th>Pinned</th>
+    <th>Progress</th>
+    <th>Title</th>
+    <th>
+        Due Date
+        <a href="/?sort-by=due-date&sort-order=asc">⬆️</a>
+        <a href="/?sort-by=due-date&sort-order=desc">⬇️</a>
+    </th>
+    <th>
+        Priority
+        <a href="/?sort-by=priority&sort-order=asc">⬆️</a>
+        <a href="/?sort-by=priority&sort-order=desc">⬇️</a>
+    </th>
+    <th>Tags</th>
+  </tr>
+  {{#each taskList}}
+  <tr>
+    <td>{{pinned}}</td>
+    <td>{{progress}}</td>
+    <td>{{title}}</td>
+    <td>{{dueDate}}</td>
+    <td>{{priority}}</td>
+    <td>
+      {{#each tags}}
+        <span class="tag">{{this}}</span>
+      {{/each}}
+    </td>
+  </tr>
+  {{/each}}
+  
+</table>

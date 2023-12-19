@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    margin-left: 25px;
+  }
+
+.button {
+    margin-left: auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+}
+  
+/* Apply styles to table header cells */
+th {
+    background-color: #008CBA; 
+    color: white; 
+    padding: 10px; 
+    text-align: middle; 
+    border: 1px solid black; 
+}
+  
+/* Apply styles to table data cells */
+td {
+    padding: 10px; 
+    border: 1px solid black; 
+    vertical-align: middle; 
+}
+  
+/* Increase row height */
+tr {
+    height: 50px;
+}
+
+/* first row to be small */
+tr:first-child{
+    height: 5px;
+}
+
+/* first column to be small for pinned */
+th:first-child,
+td:first-child {
+  width: 20px; 
+}
+
+/* second column to be small for progress*/
+th:nth-child(2),
+td:nth-child(2) {
+  width: 80px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 250px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 150px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 100px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #008CBA; /* Blue background color */
+    color: white; /* Text color */
+    margin-right: 5px; /* Margin between tags */
+    border-radius: 5px; /* Rounded corners for the box */
+}
+
+
+body{
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: bisque;
+}
