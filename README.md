@@ -1,4 +1,5 @@
 # Task Manager
+![ezgif com-video-to-gif-converted](https://github.com/dj980907/TaskManager/assets/108609222/67bb415f-1076-4573-a952-3107de40e9eb)
 
 ## Overview
 
